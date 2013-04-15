@@ -1,0 +1,4 @@
+(define even?
+  (lambda (x)
+    (or (zero? x)
+        (odd? (- x 1)))))

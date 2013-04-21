@@ -1,0 +1,5 @@
+(let even? ([x 20])
+	(or (= x 0)
+		(let odd? ([x (- x 1)])
+			(and (not (= x 0)
+						(even? (- x 1)))))
